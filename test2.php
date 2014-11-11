@@ -49,12 +49,12 @@ $arr4 = array (
 );
 */
 $meme = array ( 
-            'host1' => array(
+              array(
  	        'name' => 'host1',
                 'age'  => '10'
 	        ),
 
-            'host2' => array(
+               array(
  	        'name' => 'host2',
                 'age'  => '15'
 	         ),
@@ -69,6 +69,40 @@ $meme = array (
 
 
 );
- echo json_encode($meme);
+//https://www.udemy.com/blog/json-array/
+$mydata = array (
+           'customer' => array( 
+	       	'firstname' => 'Jason',
+                'lastname' => 'Smith',
+                'firstname' => 'sahai',
+		'lastname' => 'srichock' 
+		)
+	   
+	
 
+);
+
+$data['customer'] = array (
+		       array(
+		          'firstname' => 'jason',
+                          'lastname' => 'smith'
+		       ),
+		       array(
+			  'firstname' => 'sahai',
+			  'lastname' => 'srichock'
+			),
+                       array(
+                          'name' => array('John', 'Smith'),
+                          'age' => 27,
+                          'sex' => 0,
+                          'height' => 180.53,
+                          'is_human' => true,
+                          'string' => 'Hello'
+                      )
+
+                   ); 
+
+ echo json_encode($meme);
+// echo json_encode($mydata);
+//echo json_encode($data)
 ?>
