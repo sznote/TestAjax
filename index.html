@@ -5,9 +5,34 @@
 <script>
 
 $(document).ready(function() { 
-	
+
+    $.ajax({
+	  type:  "GET",
+	  //data: "{}",
+	  //dataType: "json",
+	    url: "test2.php",
+	    success: function(data){
+	    //var names = data;
+		// $("h1").html(data);
+		// $("h2").html(data);
+		 $("h1").text(data);
+		//	for  ( var i=0; i < data.length; ++i)
+		//	{
+			  //$("h1").append(data[i]);
+		//		$("h1").append(data[i]);
+		//	}
+		var obj = $.parseJSON(data);
+		      $("h1").text(obj.b);
+		//	$.each(data,function(idx,obj) {
+		//		$("h1").append(obj.price);
+		//	});
+		}
+		
+	}); //ajax call
+
 	$("#send").click(function() {
-    
+
+       
 	  $("h1").text("My name is Sahai");
 
 	  })
@@ -27,7 +52,7 @@ $(document).ready(function() {
 
 <body>
 <h1> My name is saza srichock</h1>
-
+<h2> Title::: </h2>
 name: <input type="textbox"></input> <br><br>
 surname: <input type="textbox"></input><br>
 status: <input type="textbox"></input><br>
