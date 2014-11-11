@@ -6,23 +6,43 @@
 
 $(document).ready(function() { 
 
+//
+//$(document).ready(function(){
+//  chargerCategories();
+//});
+//function chargetCategories() {
+//
+//   $.get('categories.php', function(data){
+//      $("#divCat").html(data);
+//      $(	  
+//    
+//   });
+//}
     $.ajax({
 	  type:  "GET",
 	  //data: "{}",
-	  //dataType: "json",
+	    //dataType: "json",
 	    url: "test2.php",
-	    success: function(data){
+	    success: function(json){
+		
+		 var obj = $.parseJSON(json);
 	    //var names = data;
 		// $("h1").html(data);
 		// $("h2").html(data);
-		 $("h1").text(data);
+		//$("h1").text(json);
+		 
+		// $.each(json, function (key,data) { 
+		//    console.log(key)
+		//  })
+		 
+		 //console.log(data.
 		//	for  ( var i=0; i < data.length; ++i)
 		//	{
-			  //$("h1").append(data[i]);
+		//	    $("h1").append(data[i]);
 		//		$("h1").append(data[i]);
 		//	}
-		var obj = $.parseJSON(data);
-		      $("h1").text(obj.b);
+		//var obj = $.parseJSON(data);
+		//     $("h1").text(obj.host1);
 		//	$.each(data,function(idx,obj) {
 		//		$("h1").append(obj.price);
 		//	});

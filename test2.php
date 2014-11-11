@@ -24,9 +24,51 @@ $arr3 = array (
 	"email" => "dwaynehicks@usssulaco.com"
 );
 
+/*
+$arr4 = array ( 
+        
+         'host1' => array(
+            'name' =>  'host1',
+            'age'  =>   '10',
+            'email' => 'host1@gmail.com'
+	     )
 
- echo json_encode($arr);
-// echo json_encode($arr2);
-// echo json_encode($arr3);
+	 'host2' => array(
+             'name' => 'host2',
+ 	     'age' => '20',
+             'email' => 'host2@gmail.com'
+             )
+
+	 'host3' => array(
+             'name' => 'host3',
+ 	     'age' => '30',
+             'email' => 'host3@gmail.com'
+             )
+
+
+);
+*/
+$meme = array ( 
+            'host1' => array(
+ 	        'name' => 'host1',
+                'age'  => '10'
+	        ),
+
+            'host2' => array(
+ 	        'name' => 'host2',
+                'age'  => '15'
+	         ),
+               array(
+		'name' => 'host3',
+                'age'  => '20'
+                  ),
+               array(
+		'name' => 'host4',
+                'age'  => '30'
+                  )
+
+
+);
+ echo json_encode($meme);
 
 ?>
