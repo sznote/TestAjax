@@ -23,10 +23,27 @@ $(document).ready(function() {
 	  //data: "{}",
 	    //dataType: "json",
 	    url: "test2.php",
-	    success: function(json){
-		
-		 var obj = $.parseJSON(json);
-	    //var names = data;
+	    success: function(data){
+		  $("h1").text(data);
+		  var obj = $.parseJSON(data);
+		  $("h2").text(obj);
+		 // var obj = data;
+/*		$.each( obj.customer, function(key, value) {
+		   
+			 $.each (value, function( index, msg) {
+				 $("h2").append(msg);
+			 });
+		   
+		  // alert(value);
+	    }); */
+		// var obj = $.parseJSON(json);
+	    // alert(json[0].firstname); 
+		// $("h2").append(customer[0].surname);
+		//console.log(obj);
+		//$.each(json,function(index, data){
+		//  $("h2").append(data,firstname);
+		//});
+		//var names = data;
 		// $("h1").html(data);
 		// $("h2").html(data);
 		//$("h1").text(json);

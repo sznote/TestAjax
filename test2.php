@@ -102,7 +102,28 @@ $data['customer'] = array (
 
                    ); 
 
- echo json_encode($meme);
+// echo json_encode($meme);
 // echo json_encode($mydata);
-//echo json_encode($data)
+
+$mydata['customer'] = array (
+		       array(
+		          'firstname' => 'jason',
+                          'lastname' => 'smith'
+		       ),
+		       array(
+			  'firstname' => 'sahai',
+			  'lastname' => 'srichock'
+			),
+		      array( 
+			 'firstname' => 'Davic',
+			 'lastname' =>  'copper'
+		      ),
+		      array(
+			 'firstname' => 'Jone',
+			 'lastname' => 'eber'
+		      )
+); 
+
+echo json_encode($mydata)
+
 ?>
