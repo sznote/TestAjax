@@ -1,3 +1,3 @@
 Test
 
-![alt tag](https://raw.githubusercontent.com/sznote/TestAjax/master/zimbra-design.jpg)
+![alt tag](zimbra-design.jpg)
